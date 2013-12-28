@@ -3,7 +3,7 @@ class 'BuyMenuEntry'
 
 function BuyMenuEntry:__init( model_id, price, entry_type )
     self.model_id = model_id
-    self.price = price
+    self.price = 0 -- Replace this with "0" / "price" for free / paid items.
     self.entry_type = entry_type
 end
 

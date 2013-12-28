@@ -145,6 +145,12 @@ function BuyMenu:PlayerFired( args, player )
             item:GetPrice(),
             player:GetMoney() )
 
+        if item:GetPrice() == 0 then
+            str = string.format(
+            "You have been given a %s for free!",
+            item:GetName() )
+        end
+
         player:SendSuccessMessage( str )
     else
         player:SendErrorMessage( err )
